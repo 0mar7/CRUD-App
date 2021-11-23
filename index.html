@@ -1,0 +1,117 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+
+    <div class="overlay">
+        <div class="container">
+            <h1 class="text-center text-danger text-uppercase pt-4">Crud System</h1>
+            <div class="mx-auto ">
+                <div class=" w-75 mx-auto my-5 text-white fw-bold">
+    
+                    <div class=" form-group">
+                        <label for="ProductName">Product Name :</label>
+                        <input class=" form-control my-2" type="text" id="productName">
+                        <div id='alertName' class="alert alert-danger d-none">
+                            Product Name Must be Start by Capital character and Name consists from 3 to 11 char.
+                        </div>
+    
+                    </div>
+    
+                    <div class=" form-group">
+    
+                        <label for="productPrice">Product Price :</label>
+                        <input class=" form-control my-2" type="number" id="productPrice">
+                        <div id='alertPrice' class="alert alert-danger d-none">
+                            Price Range from [1000 to 30000].
+                        </div>
+    
+                    </div>
+    
+                    <div class=" form-group">
+    
+                        <label for="productCategory">Product Category :</label>
+                        <input class=" form-control my-2" type="text" id="productCategory">
+                        <div id='alertCategory' class="alert alert-danger d-none">
+                            Content only [Labtop - Mobile - Tv].
+                        </div>
+    
+                    </div>
+    
+                    <div class=" form-group">
+    
+                        <label for="productDescription">Product Description :</label>
+                        <textarea class=" form-control my-2" type="number" id="productDescription"></textarea>
+                        <div id='alertDescription' class="alert alert-danger d-none">
+                            Message must content any words.
+                        </div>
+    
+                    </div>
+    
+                    <button id="submitBtn" class="btn btn-outline-danger my-3 fw-bold" disabled>Add Product</button>
+                    <div id="Fail" class="alert alert-danger d-none">
+                        Enter correct data.
+                    </div>
+                </div>
+    
+                <div class="w-75 mx-auto text-white fw-bold">
+                    <label for="">Search by product Name</label>
+                    <input id="search" class="form-control my-1" type="text" placeholder="Search Product...">
+                </div>
+    
+                <div class=" w-75 mx-auto my-5 ">
+                    <table class="table">
+                        <thead class="text-white">
+                            <th>Index</th>
+                            <th>Product Name</th>
+                            <th>Product Price</th>
+                            <th>Category</th>
+                            <th>Description</th>
+                            <th>Update</th>
+                            <th>Delete</th>
+    
+    
+                        </thead>
+    
+                        <tbody id="tableBody" class="text-white">
+    
+    
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    
+    
+        </div>
+    </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

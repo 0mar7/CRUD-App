@@ -1,0 +1,15 @@
+body
+{
+    background-image: url(../img/business2.jpeg);
+    background-size: cover;
+    position: relative;
+}
+
+.overlay
+{
+background: rgba(0, 0, 0, 0.7);
+position: absolute;
+width: 100%;
+top: 0;
+left: 0;
+}
